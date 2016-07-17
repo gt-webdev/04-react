@@ -1,0 +1,72 @@
+{
+  "clayton": {
+    "displayName": "Clayton",
+    "profileImage": "public/assets/clayton.jpg",
+    "messages": [
+      {
+        "sender": "me",
+        "text": "Hi"
+      },
+      {
+        "sender": "them",
+        "text": "Yo"
+      }
+    ]
+  },
+  "josh": {
+    "displayName": "Josh",
+    "profileImage": "public/assets/josh.jpeg",
+    "messages": [
+      {
+        "sender": "me",
+        "text": "Hi"
+      },
+      {
+        "sender": "them",
+        "text": "Yo"
+      }
+    ]
+  },
+  "pramod": {
+    "displayName": "Pramod",
+    "profileImage": "public/assets/pramod.jpg",
+    "messages": [
+      {
+        "sender": "me",
+        "text": "Hi"
+      },
+      {
+        "sender": "them",
+        "text": "Yo"
+      }
+    ]
+  },
+  "saleh": {
+    "displayName": "Saleh",
+    "profileImage": "public/assets/saleh.png",
+    "messages": [
+      {
+        "sender": "me",
+        "text": "Hi"
+      },
+      {
+        "sender": "them",
+        "text": "Yo"
+      }
+    ]
+  },
+  "jerry": {
+    "displayName": "Jerry",
+    "profileImage": "public/assets/jerry.png",
+    "messages": [
+      {
+        "sender": "me",
+        "text": "Hi"
+      },
+      {
+        "sender": "them",
+        "text": "Yo"
+      }
+    ]
+  }
+}
