@@ -3,7 +3,11 @@ import PureRenderMixin from 'react-addons-pure-render-mixin';
 
 
 const MessageArea = React.createClass({
-  mixins: [ PureRenderMixin ],
+  submitMessage: function(event) {
+    event.preventDefault();
+    this.props.onNewMessage(this.refs.typingArea.value);
+    this.refs.typingArea.value = '';
+  },
   render() {
     return (
       <div className="message-pane">
@@ -16,8 +20,8 @@ const MessageArea = React.createClass({
             }
           })}
   			</ul>
-  			<form className="typing-area">
-  				<input type="text" placeholder="Type your message here." />
+  			<form className="typing-area" onSubmit={this.submitMessage}>
+  				<input type="text" placeholder="Type your message here." ref="typingArea"/>
   				<input type="submit" className="button" value="Send" />
   			</form>
       </div>

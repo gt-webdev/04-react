@@ -144,6 +144,10 @@ header h1 {
 	background-color: #DDD;
 }
 
+.selected {
+	background-color: #DDD;
+}
+
 .profile-image {
 	width: 50px;
 	height: 50px;

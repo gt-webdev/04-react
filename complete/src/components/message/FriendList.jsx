@@ -9,7 +9,8 @@ const FriendList = React.createClass({
       <ul className="user-pane">
         {this.props.friends.map((friend) => {
           return (
-            <li className="user" key={friend.id}>
+            <li className={(this.props.curUser === friend.id) ? 'selected' : ''}
+                key={friend.id} onClick={this.props.onNewFriend.bind(null, friend.id)}>
               <img className="profile-image" src={friend.profileImage} />{friend.displayName}
             </li>
           );
