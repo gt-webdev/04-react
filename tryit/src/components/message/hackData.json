@@ -1,7 +1,7 @@
 {
   "clayton": {
     "displayName": "Clayton",
-    "profileImage": "public/assets/clayton.jpg",
+    "profileImage": "assets/clayton.jpg",
     "messages": [
       {
         "sender": "me",
@@ -15,7 +15,7 @@
   },
   "josh": {
     "displayName": "Josh",
-    "profileImage": "public/assets/josh.jpeg",
+    "profileImage": "assets/josh.jpeg",
     "messages": [
       {
         "sender": "me",
@@ -29,7 +29,7 @@
   },
   "pramod": {
     "displayName": "Pramod",
-    "profileImage": "public/assets/pramod.jpg",
+    "profileImage": "assets/pramod.jpg",
     "messages": [
       {
         "sender": "me",
@@ -43,7 +43,7 @@
   },
   "saleh": {
     "displayName": "Saleh",
-    "profileImage": "public/assets/saleh.png",
+    "profileImage": "assets/saleh.png",
     "messages": [
       {
         "sender": "me",
@@ -57,7 +57,7 @@
   },
   "jerry": {
     "displayName": "Jerry",
-    "profileImage": "public/assets/jerry.png",
+    "profileImage": "assets/jerry.png",
     "messages": [
       {
         "sender": "me",

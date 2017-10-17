@@ -1,9 +1,7 @@
 import React from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
 
 
-const FriendList = React.createClass({
-  mixins: [ PureRenderMixin ],
+class FriendList extends React.Component {
   render() {
     return (
       <ul className="user-pane">
@@ -18,6 +16,6 @@ const FriendList = React.createClass({
   		</ul>
     );
   }
-});
+}
 
 export default FriendList;

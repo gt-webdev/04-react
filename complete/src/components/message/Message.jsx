@@ -1,33 +1,34 @@
 import React from 'react';
 
-import hackData from 'json!./hackData.json'
+import hackData from './hackData.json';
 import FriendList from './FriendList.jsx';
-import MessageArea from './MessageArea.jsx'
+import MessageArea from './MessageArea.jsx';
 
-const Message = React.createClass({
-  getInitialState: function() {
-    return {
+class Message extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
       data: hackData,
       currentSelected: Object.keys(hackData)[0],
     }
-  },
-  onNewMessage: function(message) {
+  };
+  onNewMessage = (message) => {
     let curFriend = this.state.data[this.state.currentSelected];
     curFriend.messages.push({
       sender: 'me',
       text: message
     });
     let newData = this.state.data;
-    newData[this.state.currentSelected] = curFriend
+    newData[this.state.currentSelected] = curFriend;
     this.setState({
       data: newData
     });
-  },
-  onNewFriend: function(friendName) {
+  };
+  onNewFriend = (friendName) => {
     this.setState({
       currentSelected: friendName
     })
-  },
+  };
   render() {
     return (
       <div className="message-content">
@@ -43,6 +44,6 @@ const Message = React.createClass({
     	</div>
     );
   }
-});
+};
 
 export default Message;
