@@ -1,9 +1,7 @@
 import React from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
-import {Link} from 'react-router';
+import {Link} from 'react-router-dom';
 
-const Home = React.createClass({
-  mixins: [ PureRenderMixin ],
+class Home extends React.Component {
   render() {
     return (
       <div className="home-container">
@@ -16,6 +14,6 @@ const Home = React.createClass({
     	</div>
     );
   }
-});
+};
 
 export default Home;

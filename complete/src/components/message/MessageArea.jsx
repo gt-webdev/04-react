@@ -1,13 +1,13 @@
 import React from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
 
 
-const MessageArea = React.createClass({
-  submitMessage: function(event) {
+class MessageArea extends React.Component {
+  submitMessage = (event) => {
     event.preventDefault();
     this.props.onNewMessage(this.refs.typingArea.value);
     this.refs.typingArea.value = '';
-  },
+  };
+
   render() {
     return (
       <div className="message-pane">
@@ -27,6 +27,6 @@ const MessageArea = React.createClass({
       </div>
     );
   }
-});
+};
 
 export default MessageArea;
