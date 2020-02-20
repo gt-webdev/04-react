@@ -23,9 +23,9 @@ src/App.js
 
 ## 02) Set up Home component
 ```
-<div>
+<div className="signup-form">
     <input type="text" value={this.state.name} onChange={this.handleNameChange} placeholder="Your Name" />
-    <input type="submit" value="Join MyMessage" onClick={this.join} />
+    <input type="submit" className="button" value="Join MyMessage" onClick={this.join} />
 </div>
 ```
 This adds name field and submit box
