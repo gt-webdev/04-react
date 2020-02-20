@@ -51,22 +51,26 @@ Make this interactive
     {
         this.state.signedUp ?
         <div>
-            <h1>Welcome, {this.state.name}</h1>
-            {messages.length > 0 ?
-            <div>
-                <p>Here are the wonderful messages you've sent</p>
-                <ul>
-                    {messages}
-                </ul>
-            </div> : null}
-            <p>Add a new message...</p>
-            <input type="text" value={this.state.currentMessage} onChange={this.handleMessageChange} placeholder="Your Message" />
-            <input type="submit" value="Send" onClick={this.sendMessage} />
+            <header>
+                <h1>Welcome to MyMessage, {this.state.name}</h1>
+            </header>
+            <div className="fixed-bottom">
+                {messages.length > 0 ?
+                <div>
+                    <ul>
+                        {messages}
+                    </ul>
+                </div> : null}
+                <div className="typing-area">
+                    <input type="text" value={this.state.currentMessage} onChange={this.handleMessageChange} placeholder="Type Your Message Here..." />
+                    <input type="submit" value="Send" onClick={this.sendMessage} />
+                </div>
+            </div>
         </div>
         :
-        <div>
+        <div className="signup-form">
             <input type="text" value={this.state.name} onChange={this.handleNameChange} placeholder="Your Name" />
-            <input type="submit" value="Join MyMessage" onClick={this.join} />
+            <input type="submit" className="button" value="Join MyMessage" onClick={this.join} />
         </div>
     }
 </div>
@@ -96,7 +100,7 @@ sendMessage = () => {
 Add message handlers and state
 ```
 let messages = this.state.messages.map((message, i) => (
-    <li key={"m-"+i}>{message}</li>
+    <li key={"m-"+i} className="message">{message}</li>
 ));
 ```
 Add messages to render()
