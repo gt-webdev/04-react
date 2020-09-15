@@ -11,17 +11,7 @@ Build final files for production
 npm run build
 ```
 
-## 01) Set up Routing
-src/App.js
-```
-<BrowserRouter>
-    <Switch>
-        <Route exact path="/" name="Home" component={Home} />
-    </Switch>
-</BrowserRouter>
-```
-
-## 02) Set up Home component
+## 01) Set up Home component
 ```
 <div className="signup-form">
     <input type="text" value={this.state.name} onChange={this.handleNameChange} placeholder="Your Name" />
